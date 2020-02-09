@@ -5,12 +5,12 @@ import 'pages/help.dart';
 import 'pages/numsys.dart';
 
 void main() => runApp(MaterialApp(
-  title: 'My First Calculator',
-  initialRoute: '/',
-  routes: {
-    '/': (context) => Home(),
-    '/numsys': (context) => Numsys(),
-    '/help': (context) => Help(),
-    '/help/about': (context) => About(),
-  }
+    title: 'My First Calculator',
+    initialRoute: '/',
+    routes: {
+      '/': (context) => Home(),
+      '/numsys': (context) => Numsys(),
+      '/help': (context) => Help(),
+      '/help/about': (context) => About(),
+    }
 ));

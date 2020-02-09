@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' ;
 
-class SnackBarButton extends StatelessWidget {
+class SnackBarButton extends StatelessWidget {              //An easter egg :)
   @override
   Widget build(BuildContext context) {
     return IconButton(
@@ -14,6 +15,9 @@ class SnackBarButton extends StatelessWidget {
 class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -32,11 +36,15 @@ class About extends StatelessWidget {
         ),
         SizedBox(height: 15.0),
         Divider(thickness: 1.0),
-        Text('My First Calculator (v0.5)', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
+        Text('My First Calculator (v1.0)', style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
         SizedBox(height: 5.0),
         Container(padding: EdgeInsets.fromLTRB(25, 0, 20, 0), child: Text('This app was developed as a project for DotGov Solutions internship by ITMO University student Alexander Chapkey in 2020.', style: TextStyle(fontSize: 20))),
         SizedBox(height: 5.0),
-        Container(padding: EdgeInsets.fromLTRB(25, 0, 20, 0), child: Text('It took me around a week to come up with the main idea of the app, around a week to learn Flutter basics, around two days to develop the interface and around two weeks to make all the functions work properly.', style: TextStyle(fontSize: 20))),
+        Container(padding: EdgeInsets.fromLTRB(25, 0, 20, 0), child: Text('It took me around a week to come up with the main idea of the app, around a week to learn Flutter basics, around two days to develop the interface and around three weeks to make all the functions work properly.', style: TextStyle(fontSize: 20))),
+        SizedBox(height: 5.0),
+        Container(padding: EdgeInsets.fromLTRB(25, 0, 20, 0), child: Text('While developing, I used my own Samsung Galaxy S10e for debugging, so I relied on it\'s screen resolution to build the interface.', style: TextStyle(fontSize: 20))),
+        SizedBox(height: 5.0),
+        Container(padding: EdgeInsets.fromLTRB(25, 0, 20, 0), child: Text('Done 9th February, 2020', style: TextStyle(fontSize: 20))),
         Divider(thickness: 1.0),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -64,6 +72,13 @@ class About extends StatelessWidget {
           children: <Widget>[
             Icon(Icons.link, size: 40),
             Text('dotgovsolutions.net', style: TextStyle(fontSize: 20))
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Icon(Icons.link, size: 40),
+            Text('ifmo.ru', style: TextStyle(fontSize: 20))
           ],
         ),
       ],),
