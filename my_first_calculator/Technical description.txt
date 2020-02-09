@@ -1,0 +1,21 @@
+My First Calculator (v1.0)
+
+This is an app created in Android Studio v3.5.2 using Flutter v1.12.13 framework and Dart v2.7.0 programming language.
+It is a modern Material App.
+Imported libraries:
+ - Dart Math library
+ - Flutter Material library
+ - Flutter Services library
+
+This app was designed and debugged using Samsung Galaxy S10e and the interface is built relying on it's screen resolution.
+
+The main functionality of the app is calculating simple mathematical functions:
+ - Addition (a+b)
+ - Subtraction (a-b)
+ - Multiplying (a*b)
+ - Division (a/b)
+ - Logarithms (Log a base b)
+ - Roots (bth root of a)
+ - Trigonometry
+
+The app is also able to convert numbers between number systems from 2 to 32.

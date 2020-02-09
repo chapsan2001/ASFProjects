@@ -1,0 +1,10 @@
+How to install My First Calculator v1.0 on your smartphone
+
+Step 1. Send an APK file located in the My First Calculator folder to the smartphone.
+Also, you can download it from GitHub (https://github.com/chapsan2001/ASFProjects/blob/master/my_first_calculator/MyFirstCalculator.apk).
+
+Step 2. Change safety settings on your smartphone to enable installing apps from unknown sources.
+
+Step 3. Launch the APK file.
+
+Done.
