@@ -23,10 +23,9 @@ class HomeState extends State<Home> {
     setState(() {});
   }
   @override
-  Widget build(BuildContext context) {        //This app isn't supposed to work in landscape mode
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-    ]);
+  Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);   //This app isn't supposed to work in landscape mode
+    SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.top]);          //This line is hiding the bottom navigation bar
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -63,8 +62,7 @@ class HomeState extends State<Home> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          Text('$number', style: TextStyle(fontSize: 50)),          //Number display
-          SizedBox(height: 200),
+          Text('$number', style: TextStyle(fontSize: 35)),          //Number display
           Divider(thickness: 1.0),
           Row(                                                      //Button rows
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
