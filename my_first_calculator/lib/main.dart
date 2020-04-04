@@ -4,7 +4,12 @@ import 'pages/about.dart';
 import 'pages/help.dart';
 import 'pages/numsys.dart';
 
-void main() => runApp(MaterialApp(
+double constW = 0.225;  //Width constant which is used to conveniently change buttons width
+double constH = 0.08;   //Height constant, same about height
+double constFS = 24;    //Font size constant, same about font size
+
+void main() {
+  runApp(MaterialApp(
     title: 'My First Calculator',
     initialRoute: '/',
     routes: {
@@ -12,5 +17,5 @@ void main() => runApp(MaterialApp(
       '/numsys': (context) => Numsys(),
       '/help': (context) => Help(),
       '/help/about': (context) => About(),
-    }
-));
+  }));
+}
